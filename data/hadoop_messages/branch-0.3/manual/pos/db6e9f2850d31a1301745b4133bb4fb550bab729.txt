@@ -1,0 +1,3 @@
+HADOOP-325.  Improve the FileNotFound exceptions thrown by LocalFileSystem to include the name of the file.  Contributed by Benjamin Reed.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@409451 13f79535-47bb-0310-9956-ffa450edef68

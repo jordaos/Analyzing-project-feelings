@@ -1,0 +1,3 @@
+Fix for HADOOP-66.  Delete dfs temp files on JVM exit.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@386220 13f79535-47bb-0310-9956-ffa450edef68

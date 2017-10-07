@@ -1,0 +1,3 @@
+More fixes to get working directory to work on Windows.  Long-term we should stop using java.io.File for our abstract file paths.  On Windows, 'new File(/foo/bar).isAbsolute()' returns false, which caused lots of problems.  So I have added a FileSystem.isAbsolute() method that we use internally.  I also added a few more .getAbsoluteFile() calls to convert paths into absolute paths so that LocalFileSystem works correctly.  Finally I took advantage of file status information cached in DFSFile, eliminating some namenode RPCs.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390734 13f79535-47bb-0310-9956-ffa450edef68

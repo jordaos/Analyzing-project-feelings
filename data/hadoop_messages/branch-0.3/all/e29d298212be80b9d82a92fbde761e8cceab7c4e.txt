@@ -1,0 +1,3 @@
+HADOOP-270.  Fix potential deadlock in datanode shutdown.  Contributed by Hairong.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@411288 13f79535-47bb-0310-9956-ffa450edef68

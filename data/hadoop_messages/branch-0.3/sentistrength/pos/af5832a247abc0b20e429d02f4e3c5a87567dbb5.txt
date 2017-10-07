@@ -1,0 +1,3 @@
+HADOOP-182.  Fix problems related to lost task trackers.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399833 13f79535-47bb-0310-9956-ffa450edef68

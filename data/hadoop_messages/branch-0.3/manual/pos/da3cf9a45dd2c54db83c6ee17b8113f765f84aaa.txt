@@ -1,0 +1,3 @@
+Fix HADOOP-162.  Stop generating ConcurrentModificationExceptions when releasing file locks.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@396721 13f79535-47bb-0310-9956-ffa450edef68

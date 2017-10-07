@@ -1,0 +1,4 @@
+Fix for HADOOP-97.  Improve error handling.  Contributed by Konstantin Shvachko.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@387636 13f79535-47bb-0310-9956-ffa450edef68

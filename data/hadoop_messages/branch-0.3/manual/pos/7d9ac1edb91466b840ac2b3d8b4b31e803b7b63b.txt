@@ -1,0 +1,3 @@
+Fix HADOOP-38: Add FileSystem.getBlockSize() method and use it as the maximum split size.  Also change FileSystem to implement Configurable, and improve some javadoc, using inherited comments where possible and removing implementation details from public javadoc.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@378058 13f79535-47bb-0310-9956-ffa450edef68

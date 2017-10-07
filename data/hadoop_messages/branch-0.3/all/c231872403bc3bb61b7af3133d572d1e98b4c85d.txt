@@ -1,0 +1,3 @@
+HADOOP-247.  Fix sort progress to better handle exceptions.  Contributed by Mahadev.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@409024 13f79535-47bb-0310-9956-ffa450edef68

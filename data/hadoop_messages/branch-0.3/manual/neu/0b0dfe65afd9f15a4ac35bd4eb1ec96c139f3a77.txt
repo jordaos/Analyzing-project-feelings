@@ -1,0 +1,6 @@
+Starting a Hadoop Change Log.  Developers: please add a note to this
+file for each significant change.  Contributed patches should ideally
+include an entry for this file.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390889 13f79535-47bb-0310-9956-ffa450edef68

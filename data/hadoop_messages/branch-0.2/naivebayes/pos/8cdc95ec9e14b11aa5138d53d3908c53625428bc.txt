@@ -1,0 +1,3 @@
+Fix for HADOOP-52.  Add username and working-directory to FileSystem and JobConf and use these to resolve relative paths.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@388229 13f79535-47bb-0310-9956-ffa450edef68

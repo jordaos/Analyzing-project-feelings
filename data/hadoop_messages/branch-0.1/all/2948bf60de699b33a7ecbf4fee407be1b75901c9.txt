@@ -1,0 +1,9 @@
+Add a tool for checking DFS consistency (HADOOP-101).
+
+Add a shortcut to bin/hadoop. In accordance with long-standing
+*nix tradition this command is called 'fsck'.
+
+Development of this tool has been supported by Krugle.net. Thank you!
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@389874 13f79535-47bb-0310-9956-ffa450edef68

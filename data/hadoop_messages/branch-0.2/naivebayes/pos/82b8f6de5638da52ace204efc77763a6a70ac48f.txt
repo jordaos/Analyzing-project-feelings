@@ -1,0 +1,3 @@
+Fix HADOOP-170.  Permit FileSystem clients to examine and modify the replication count of individual files.  Also fix a few replication-related bugs.  Contributed by Konstantin Shvachko.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@397330 13f79535-47bb-0310-9956-ffa450edef68

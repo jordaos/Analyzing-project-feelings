@@ -1,0 +1,3 @@
+Fix for HADOOP-84.  Improve error and log messages when block cannot be obtained by including file name and offset.  Also removed a few unused variables.  Contributed by Konstantin Shvachko.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390213 13f79535-47bb-0310-9956-ffa450edef68

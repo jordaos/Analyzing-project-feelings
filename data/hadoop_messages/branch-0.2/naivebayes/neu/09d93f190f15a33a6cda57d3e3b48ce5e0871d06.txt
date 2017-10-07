@@ -1,0 +1,5 @@
+If close() fails, then abandon the file, so that any leases are
+cleared and other task may attempt to create it.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390717 13f79535-47bb-0310-9956-ffa450edef68

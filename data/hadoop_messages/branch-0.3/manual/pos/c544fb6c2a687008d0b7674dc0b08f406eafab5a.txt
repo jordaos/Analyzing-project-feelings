@@ -1,0 +1,3 @@
+Fix HADOOP-30: add -lsr and -cat commands to DFSShell.  Contributed by Michel Tourn.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@376774 13f79535-47bb-0310-9956-ffa450edef68

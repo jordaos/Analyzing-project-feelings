@@ -1,0 +1,4 @@
+Fix for HADOOP-87.  Dont' pass large buffers through to deflater as this is inefficient.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@387629 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,7 @@
+Fix so that close() throws IOException, so that classes which override
+this method can throw IOException, as specified in the Closeable
+interface.  Also add the Apache license (which must be in every file)
+and add a bit more javadoc.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@391364 13f79535-47bb-0310-9956-ffa450edef68

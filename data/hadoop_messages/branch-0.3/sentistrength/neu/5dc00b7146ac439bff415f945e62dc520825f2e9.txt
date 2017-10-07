@@ -1,0 +1,4 @@
+Print stack trace when child fails to contact parent.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@380834 13f79535-47bb-0310-9956-ffa450edef68

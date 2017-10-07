@@ -1,0 +1,7 @@
+Fix for HADOOP-112.  All operations on local files are now performed
+through a LocalFileSystem.  In particular, listing the local
+directory, which was causing this bug, when CRC files were included
+in the listing.  Now they are correctly excluded.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390218 13f79535-47bb-0310-9956-ffa450edef68

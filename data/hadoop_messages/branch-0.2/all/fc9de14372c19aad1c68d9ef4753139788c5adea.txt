@@ -1,0 +1,21 @@
+  The MapredLoadTest now has an extra step, to exercise
+the case where we have multiple reduce tasks.
+
+  It used to have two stages: one job that created a huge
+file of numbers in random order, followed by a job that
+would read that file and count the numbers.  If the final
+count was correct, the test passed.
+
+  Unfortunately, neither of these jobs had a reduce task
+that was greater than 1.
+
+  So now we've got three stages.  The first stage is
+unchanged.  The second stage reads the big file, then
+emits the answer key split into 10 parts, one for each
+reduce task.  then a third stage merges those parts into
+a final number count.  As before, if that final count
+is correct, all is well.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@383279 13f79535-47bb-0310-9956-ffa450edef68

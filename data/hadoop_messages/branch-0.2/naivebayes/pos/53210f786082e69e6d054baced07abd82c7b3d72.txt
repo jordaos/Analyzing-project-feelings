@@ -1,0 +1,4 @@
+Quote HADOOP_HOME so that it may contain spaces.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@400151 13f79535-47bb-0310-9956-ffa450edef68

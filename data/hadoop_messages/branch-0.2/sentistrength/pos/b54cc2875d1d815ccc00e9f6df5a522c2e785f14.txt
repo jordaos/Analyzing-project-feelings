@@ -1,0 +1,3 @@
+Fix for HADOOP-125.  Absolute paths are tricky on Windows.  For Hadoop's purposes, consider things that start with a slash to be absolute.  Also, Hadoop should not change the JVM's CWD.  All files are now correctly cleaned up for a Nutch crawl, in either local or psuedo-distributed mode.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@392451 13f79535-47bb-0310-9956-ffa450edef68

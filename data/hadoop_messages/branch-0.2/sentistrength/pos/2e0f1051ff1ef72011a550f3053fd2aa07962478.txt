@@ -1,0 +1,11 @@
+Apply local Configuration to parameters received via RPC if they
+implement Configurable. Fix by Marko Bauhardt.
+
+Note: in the future there may be protocols that assume
+different local and remote Configuration. However, with the
+current RPC implementation we don't support it anyway, and for
+now it seems better that parameters implementing Configurable
+should be provided with non-null Configuration.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@384008 13f79535-47bb-0310-9956-ffa450edef68

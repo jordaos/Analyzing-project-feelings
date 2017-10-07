@@ -1,0 +1,6 @@
+Always return an absolute pathname for local files.  This fixes
+problems on Windows, where a path specified with "/foo" in a config
+file is sometimes treated as a relative path.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@389633 13f79535-47bb-0310-9956-ffa450edef68

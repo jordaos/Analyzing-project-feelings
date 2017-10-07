@@ -1,0 +1,3 @@
+Fix HADOOP-25: improve example code & package separately.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@376028 13f79535-47bb-0310-9956-ffa450edef68

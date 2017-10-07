@@ -1,0 +1,3 @@
+Fix HADOOP-169.  Don't fail reduce tasks if a call to the jobtracker to locate map outputs fails.  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@397321 13f79535-47bb-0310-9956-ffa450edef68

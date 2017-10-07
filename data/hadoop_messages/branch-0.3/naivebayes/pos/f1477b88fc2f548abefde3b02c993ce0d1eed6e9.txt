@@ -1,0 +1,5 @@
+Fix for HADOOP-45.  Fatal task errors are now logged at the
+JobTracker, facilitating debugging.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@387664 13f79535-47bb-0310-9956-ffa450edef68

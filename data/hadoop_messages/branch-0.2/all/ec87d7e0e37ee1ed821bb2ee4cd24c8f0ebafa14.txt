@@ -1,0 +1,3 @@
+Fix for HADOOP-2.  The combiner now clones keys and values, so mappers may now safely reuse emitted keys and values.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390231 13f79535-47bb-0310-9956-ffa450edef68

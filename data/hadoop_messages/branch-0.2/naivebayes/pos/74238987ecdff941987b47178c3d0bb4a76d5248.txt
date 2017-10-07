@@ -1,0 +1,3 @@
+Fix tasktracker to exit when errors are encountered reading map output, in order to force re-execution of map tasks.  It's overkill, since it will re-compute all map output computed by that task tracker, not just that which could not be read, but this should be a rare situation.  If we start seeing it frequently, then we could optimize this by adding a way to tell the jobtracker that a particular previously completed map task now needs to be re-executed.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@385856 13f79535-47bb-0310-9956-ffa450edef68

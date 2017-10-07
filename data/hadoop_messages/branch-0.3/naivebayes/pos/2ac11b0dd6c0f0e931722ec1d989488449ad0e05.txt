@@ -1,0 +1,3 @@
+HADOOP-146.  Fix DFS to check that newly allocated block id's are not already used.  Contributed by Konstantin.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@405890 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+Fix for HADOOP-107.  As they were written, dfs blocks were both trickled to a datanode and tee'd to a temp file (in case the connection to the datanode failed).  Now they're only written to the temp file, with no connection to the datanode made until the block is complete.  This reduces the number of long-lived mostly-idle connections to datanodes, which was causing problems.  It also simplifies the DFSClient code significantly.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390262 13f79535-47bb-0310-9956-ffa450edef68

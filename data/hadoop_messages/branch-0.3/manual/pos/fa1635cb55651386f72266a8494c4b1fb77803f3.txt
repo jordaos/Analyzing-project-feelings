@@ -1,0 +1,10 @@
+  A bug in the TaskTracker was governing task-allocation
+by counting the total number of tasks.  The right thing
+to do is keep a total for map tasks, and a separate total
+for reduces.
+
+  This is now fixed.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@382895 13f79535-47bb-0310-9956-ffa450edef68

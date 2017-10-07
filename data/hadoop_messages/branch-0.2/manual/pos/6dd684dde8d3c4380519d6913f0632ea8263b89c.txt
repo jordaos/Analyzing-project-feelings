@@ -1,0 +1,3 @@
+Fix HADOOP-157.  Make dfs client wait long enough for locks on abandoned files to expire when creating files, so that when a task that writes to dfs fails, its replacements do not also immediately fail when they try to open the same files.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@396605 13f79535-47bb-0310-9956-ffa450edef68

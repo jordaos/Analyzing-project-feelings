@@ -1,0 +1,3 @@
+Fix HADOOP-128.  Improved DFS error handling.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@393865 13f79535-47bb-0310-9956-ffa450edef68

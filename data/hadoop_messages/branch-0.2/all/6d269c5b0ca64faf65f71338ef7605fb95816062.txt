@@ -1,0 +1,5 @@
+Keep 'unzip' from prompting when overwriting (e.g., when archive
+contains same file twice).  Also make it less verbose.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@376449 13f79535-47bb-0310-9956-ffa450edef68

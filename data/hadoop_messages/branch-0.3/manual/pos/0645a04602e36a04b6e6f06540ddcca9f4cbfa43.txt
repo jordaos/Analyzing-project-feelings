@@ -1,0 +1,3 @@
+HADOOP-192.  Fix a Java 1.4 incompatibility.  Contributed by David Bowen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399428 13f79535-47bb-0310-9956-ffa450edef68

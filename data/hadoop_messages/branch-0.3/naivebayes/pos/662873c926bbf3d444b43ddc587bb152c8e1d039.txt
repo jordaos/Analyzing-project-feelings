@@ -1,0 +1,3 @@
+HADOOP-195.  Improve performance of transfer of map outputs to reduce nodes by performing multiple transfers in parallel, each using a separate socket.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@409261 13f79535-47bb-0310-9956-ffa450edef68

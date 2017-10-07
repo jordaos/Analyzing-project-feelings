@@ -1,0 +1,3 @@
+Bundle webapps into jar.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@376802 13f79535-47bb-0310-9956-ffa450edef68

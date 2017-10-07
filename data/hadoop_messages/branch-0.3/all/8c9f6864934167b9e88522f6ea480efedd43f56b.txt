@@ -1,0 +1,3 @@
+HADOOP-212.  Permit alteration of the file block size in DFS.  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@406746 13f79535-47bb-0310-9956-ffa450edef68

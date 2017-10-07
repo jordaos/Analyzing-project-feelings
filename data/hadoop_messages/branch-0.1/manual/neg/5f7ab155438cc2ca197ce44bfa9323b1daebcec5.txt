@@ -1,0 +1,10 @@
+  Fix bug HADOOP-16.
+
+  Don't invoke TaskInProgress.hasTaskWithCacheHit()
+unnecessarily from within JobInProgress.
+
+  Also, cache filesystem hints inside JobInProgress.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@377801 13f79535-47bb-0310-9956-ffa450edef68

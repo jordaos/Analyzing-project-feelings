@@ -1,0 +1,3 @@
+Fix HADOOP-116.  Clean up job submission files.  On job completion, remove the directory containing the submitted job.xml file, since JobClient always creates a new directory to hold this file.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@392353 13f79535-47bb-0310-9956-ffa450edef68

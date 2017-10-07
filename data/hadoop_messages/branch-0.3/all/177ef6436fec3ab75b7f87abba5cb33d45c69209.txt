@@ -1,0 +1,5 @@
+Fix for HADOOP-78.  Stream buffering was mistakenly disabled in writes
+by the RPC client.  Identified & fixed by Owen O'Malley.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@385696 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+Fix for HADOOP-126.  'bin/hadoop dfs -cp' now correctly handles .crc files.  This also consolidates a lot of file copying code.  Contributed by Konstantin Shvachko.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@393025 13f79535-47bb-0310-9956-ffa450edef68

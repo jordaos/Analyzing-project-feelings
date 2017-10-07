@@ -1,0 +1,3 @@
+HADOOP-115.  Permit reduce input and output types to differ.  Contributed by Runping Qi.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@407355 13f79535-47bb-0310-9956-ffa450edef68

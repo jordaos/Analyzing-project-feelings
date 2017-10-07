@@ -1,0 +1,3 @@
+Fix for HADOOP-19.  A namenode must now be formatted before it may be used.  Attempts to start a namenode in an unformatted directory will fail, rather than automatically creating a new, empty filesystem, causing existing datanodes to delete all blocks.  Thus a mis-configured dfs.data.dir should no longer cause data loss.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@389566 13f79535-47bb-0310-9956-ffa450edef68

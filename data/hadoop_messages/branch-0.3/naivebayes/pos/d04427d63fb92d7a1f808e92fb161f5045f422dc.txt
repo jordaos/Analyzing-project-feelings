@@ -1,0 +1,3 @@
+HADOOP-251.  Make tasks processes tolerant of failed progress reports to their parent process.  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@409265 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+HADOOP-178.  Piggyback DFS blockwork requests on heartbeat responses, reducing traffic.  Also move blockwork delay on startup from datanode to namenode, fixing a problems when the namenode alone restarts.  Contributed by Hairong Kuang.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@398668 13f79535-47bb-0310-9956-ffa450edef68

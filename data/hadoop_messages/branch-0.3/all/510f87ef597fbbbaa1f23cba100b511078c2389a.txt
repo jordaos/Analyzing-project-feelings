@@ -1,0 +1,3 @@
+Fix HADOOP-36.  Scripts now source conf/hadoop-env.sh, to faciliate setting of environment variables, even on remote hosts.  The default slaves file has move from ~/.slaves to conf/slaves.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@378078 13f79535-47bb-0310-9956-ffa450edef68

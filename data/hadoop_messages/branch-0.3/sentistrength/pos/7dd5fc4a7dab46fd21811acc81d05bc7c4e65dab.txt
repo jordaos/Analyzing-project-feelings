@@ -1,0 +1,3 @@
+Fix for HADOOP-66.  DFS blocks are no longer written to local temp files.  If a connection to a datanode fails then an exception is now thrown, rather than trying to re-connect to another datanode.  Timeouts were also removed from datanode connections, since these caused a lot of failed connections.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@384385 13f79535-47bb-0310-9956-ffa450edef68

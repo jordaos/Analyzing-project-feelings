@@ -1,0 +1,3 @@
+Fix HADOOP-143.  Stop line-wrapping when displaying stack traces.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@394988 13f79535-47bb-0310-9956-ffa450edef68

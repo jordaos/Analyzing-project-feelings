@@ -1,0 +1,6 @@
+  Add a bunch of updated comments and JavaDocs to
+the Distributed File System package.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@377317 13f79535-47bb-0310-9956-ffa450edef68

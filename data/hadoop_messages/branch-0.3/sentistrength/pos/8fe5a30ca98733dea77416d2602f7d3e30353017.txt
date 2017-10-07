@@ -1,0 +1,3 @@
+HADOOP-124.  Change DFS so that datanodes are identified by a persistent ID rather than by host and port.  Contributed by Konstantin.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@410635 13f79535-47bb-0310-9956-ffa450edef68

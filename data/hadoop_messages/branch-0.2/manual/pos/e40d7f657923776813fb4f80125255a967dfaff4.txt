@@ -1,0 +1,3 @@
+HADOOP-184.  Restructure some test code to better support testing on a cluster.  Contributed by Mahadev.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399077 13f79535-47bb-0310-9956-ffa450edef68

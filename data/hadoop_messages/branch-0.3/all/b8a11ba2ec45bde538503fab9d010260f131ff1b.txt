@@ -1,0 +1,3 @@
+Fixed HADOOP-129.  Replaced uses of java.io.File in FileSystem API with a new class named Path.  Also dfs.local.dir and mapred.local.dir may no longer be space-separated, but must now be comma-separated lists of directories.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@394984 13f79535-47bb-0310-9956-ffa450edef68

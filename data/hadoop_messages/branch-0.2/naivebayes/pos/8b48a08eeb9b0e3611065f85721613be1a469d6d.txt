@@ -1,0 +1,3 @@
+Fixed HADOOP-20: permit mappers and reducers to cleanup.  Add a close() method to the Mapper and Reducer interfaces by having them extend a Closeable interface.  Update all implementations to define close().  Patch by Michel Tourn.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@376355 13f79535-47bb-0310-9956-ffa450edef68

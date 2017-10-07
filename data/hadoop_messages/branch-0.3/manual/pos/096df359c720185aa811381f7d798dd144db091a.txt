@@ -1,0 +1,3 @@
+HADOOP-209.  Add MapReduce-based file copier.  Contributed by Milind Bhandarkar.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@405884 13f79535-47bb-0310-9956-ffa450edef68

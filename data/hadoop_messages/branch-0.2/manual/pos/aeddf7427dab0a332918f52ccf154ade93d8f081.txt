@@ -1,0 +1,3 @@
+Fix for HADOOP-80.  Make BytesWritable also a WritableComparable.  Also add hashBytes() utility method to WritableComparator and use it to hash both BytesWritable and UTF8.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@386219 13f79535-47bb-0310-9956-ffa450edef68

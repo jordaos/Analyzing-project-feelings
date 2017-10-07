@@ -1,0 +1,4 @@
+Fix to make independent of "unzip", using java's built in unzip code instead.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@381803 13f79535-47bb-0310-9956-ffa450edef68

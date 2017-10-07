@@ -1,0 +1,3 @@
+HADOOP-211.  Switch logging use the Jakarta Commons logging API, configured to use log4j by default.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@411254 13f79535-47bb-0310-9956-ffa450edef68

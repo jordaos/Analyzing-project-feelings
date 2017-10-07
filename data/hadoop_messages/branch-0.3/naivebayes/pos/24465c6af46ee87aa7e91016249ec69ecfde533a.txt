@@ -1,0 +1,3 @@
+Fix unit tests on Windows.  Don't assume that, just because a pathname begins with a slash that it also returns true for File.isAbsolute().  Instead use getAbsoluteFile() to force such things to be absolute.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@389620 13f79535-47bb-0310-9956-ffa450edef68

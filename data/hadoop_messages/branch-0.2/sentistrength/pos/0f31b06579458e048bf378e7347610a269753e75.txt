@@ -1,0 +1,3 @@
+Fix for HADOOP-134.  Don't hang jobs when the tasktracker is misconfigured to use an un-writable local directory.  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@395058 13f79535-47bb-0310-9956-ffa450edef68

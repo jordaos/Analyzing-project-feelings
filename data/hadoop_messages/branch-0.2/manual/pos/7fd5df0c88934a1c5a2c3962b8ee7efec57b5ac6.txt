@@ -1,0 +1,4 @@
+Fix for HADOOP-57.  Permit listing of "/" in dfs.  With help from Mahadev konar.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@384019 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+HADOOP-193 & HADOOP-194.  A filesystem benchmark and a filesystem checker.  Contributed by Konstantin.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399543 13f79535-47bb-0310-9956-ffa450edef68

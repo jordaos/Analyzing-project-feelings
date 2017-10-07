@@ -1,0 +1,3 @@
+Fix HADOOP-166.  RPCs can now pass subclasses of declared types as parameters.  Note this change is incompatible for any application that stores ObjectWritables in a file.  Nutch only stores ObjectWritable in temporary intermediate files, so this is not a problem for Nutch.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@397288 13f79535-47bb-0310-9956-ffa450edef68

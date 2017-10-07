@@ -1,0 +1,3 @@
+HADOOP-187.  Add RandomWriter and Sort examples.  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399011 13f79535-47bb-0310-9956-ffa450edef68

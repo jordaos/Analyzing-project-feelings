@@ -1,0 +1,3 @@
+HADOOP-207, Fix JDK 1.4 incompatible use of System.getenv().
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@405853 13f79535-47bb-0310-9956-ffa450edef68

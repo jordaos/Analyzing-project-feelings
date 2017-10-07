@@ -1,0 +1,3 @@
+Fix for HADOOP-92.  Show information about all attempts to run each task in the web ui.  Contributed by Mahadev konar.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@393641 13f79535-47bb-0310-9956-ffa450edef68

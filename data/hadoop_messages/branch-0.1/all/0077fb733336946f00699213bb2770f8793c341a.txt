@@ -1,0 +1,3 @@
+Merge -r 390737:392453 from trunk, preparing for 0.1.1 release.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/branches/branch-0.1@392455 13f79535-47bb-0310-9956-ffa450edef68

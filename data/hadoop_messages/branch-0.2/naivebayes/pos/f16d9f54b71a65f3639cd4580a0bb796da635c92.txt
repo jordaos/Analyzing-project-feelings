@@ -1,0 +1,5 @@
+Fix createNewFile() so that it creates a .crc file, like everything
+else does.  This fixes some annoyances in Nutch.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@398010 13f79535-47bb-0310-9956-ffa450edef68

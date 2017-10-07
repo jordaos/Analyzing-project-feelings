@@ -1,0 +1,3 @@
+Fix so that task state is displayed even when there are no errors.  Also changed report to be a datastructure rather than a vector of strings.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@378355 13f79535-47bb-0310-9956-ffa450edef68

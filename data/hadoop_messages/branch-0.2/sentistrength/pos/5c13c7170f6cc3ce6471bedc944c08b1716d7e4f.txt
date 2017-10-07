@@ -1,0 +1,5 @@
+Fix rsync command to (a) use ssh as transport, and (b) to correctly
+quote the path.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@381821 13f79535-47bb-0310-9956-ffa450edef68

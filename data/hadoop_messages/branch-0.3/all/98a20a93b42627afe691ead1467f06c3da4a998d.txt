@@ -1,0 +1,3 @@
+Fix for HADOOP-81.  Job-specific parameters should be read from the job-specific configuration, not the daemon's.  This permits speculative execution, number of map & reduce tasks, etc. to be settable in the job.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@386224 13f79535-47bb-0310-9956-ffa450edef68

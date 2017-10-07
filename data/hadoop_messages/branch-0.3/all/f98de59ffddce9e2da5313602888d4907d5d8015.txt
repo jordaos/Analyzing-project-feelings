@@ -1,0 +1,5 @@
+Remove a few vestiges of Nutch's plugin mechanism, fixing bug HADOOP-6
+(Thanks, Owen!).  Also fix a few typos.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@375328 13f79535-47bb-0310-9956-ffa450edef68

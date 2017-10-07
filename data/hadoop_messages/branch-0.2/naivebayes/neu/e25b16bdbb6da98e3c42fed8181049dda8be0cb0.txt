@@ -1,0 +1,9 @@
+Don't always query jobtracker for all needed map outputs, instead just
+for a random sample.  When the total number of splits was large, the
+jobtracker was spending most of its time servicing these requests.
+Also reduce the frequency of these requests.  Long-term we may need a
+different algorithm here to ensure that reduces are more promptly and
+efficiently notified of map completions.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@383622 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,8 @@
+  This code makes sure we read from a local block,
+if available.  I thought this code had already been
+committed some time ago, but the workspace doesn't
+have it.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@383197 13f79535-47bb-0310-9956-ffa450edef68

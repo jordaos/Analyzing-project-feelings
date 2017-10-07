@@ -1,0 +1,216 @@
+The old core branches are now common branches.    
+Moving branches to new location.    
+Merged fixes from trunk, preparing for 0.2.1 release.   
+Preparing to tag 0.1.0 release.   
+Adding branch for 0.2 releases.  2nd attempt.   
+Quote HADOOP_HOME so that it may contain spaces.    
+HADOOP-96.  Logging improvements.  Contributed by Hairong Kuang.   
+HADOOP-198.  Add more example programs to example driver.  Also fix another WritableFactories-related error.  Contributed by Mahadev.   
+HADOOP-182.  Fix problems related to lost task trackers.   
+HADOOP-193 & HADOOP-194.  A filesystem benchmark and a filesystem checker.  Contributed by Konstantin.   
+HADOOP-65.  Initial version of multi-language record system.  Contributed by Milind Bhandarkar.   
+Fix a problem introduced by the patch for HADOOP-184, where the 'package' target was broken.  Contributed by Mahadev.   
+Better fix for HADOOP-189.  Tested in both distributed and standalone mode.  Note that WritableFactories is not quite functioning correctly and there are a few hacks around this that should be removed when that's better understood.   
+Reverting change 399426, which broke distributed operation.   
+HADOOP-191.  Add streaming contrib package.  Contributed by Michel Tourn.   
+HADOOP-192.  Fix a Java 1.4 incompatibility.  Contributed by David Bowen.   
+HADOOP-189.  Fix MapReduce in standalone configuration to correctly handle job jar files that contain a lib directory with nested jar files.   
+HADOOP-184.  Restructure some test code to better support testing on a cluster.  Contributed by Mahadev.   
+Fix HADOOP-19.  If a child process hangs after it has reported completion its output should not be lost.   
+HADOOP-185.  Fix so that, if a task tracker times out making the RPC asking for a new task to run, the job tracker does not think that it is actually running the task returned (but never received).  Contributed by Owen.   
+HADOOP-188.  More fixes to to JobClient, following on HADOOP-174.  Contributed by Owen.   
+HADOOP-187.  Add RandomWriter and Sort examples.  Contributed by Owen.   
+HADOOP-186.  Better error handling in TaskTracker's top-level loop.  Also improve calculation of time to send next heartbeat.  Contributed by Owen O'Malley.   
+HADOOP-183.  If the namendode is restarted with different minimum or maximum replication counts, existing files' replication counts are now automatically adjusted to be within the newly configured bounds.  Contributed by Hairong Kuang.   
+HADOOP-178.  Piggyback DFS blockwork requests on heartbeat responses, reducing traffic.  Also move blockwork delay on startup from datanode to namenode, fixing a problems when the namenode alone restarts.  Contributed by Hairong Kuang.   
+HADOOP-177.  Page through tasks in web ui.   
+Fix HADOOP-174.  Make job client try up to five times to contact job tracker before aborting a job.  Contributed by Owen.   
+Note recent changes.   
+Fix createNewFile() so that it creates a .crc file, like everything else does.  This fixes some annoyances in Nutch.    
+Fix HADOOP-167.  Reduce the number of Configuration and JobConf's allocated.  Contributed by Owen.   
+Change default replication.max in code to be the same as in hadoop-default.xml.    
+HADOOP-173.  Optimize allocation of tasks with local data.   
+Permit configuration to specify higher replication for job submission files.  Also reduce complaints when a file's replication is greater than the size of the cluster.   
+Fix bug introduced yesterday.  NullInstance really is still required!   
+Fix HADOOP-170.  Permit FileSystem clients to examine and modify the replication count of individual files.  Also fix a few replication-related bugs.  Contributed by Konstantin Shvachko.   
+Fix HADOOP-169.  Don't fail reduce tasks if a call to the jobtracker to locate map outputs fails.  Contributed by Owen.   
+Fix HADOOP-168.  Add IOException to throws of all MapReduce RPC protocol methods.  Contributed by Owen.   
+Fix HADOOP-166.  RPCs can now pass subclasses of declared types as parameters.  Note this change is incompatible for any application that stores ObjectWritables in a file.  Nutch only stores ObjectWritable in temporary intermediate files, so this is not a problem for Nutch.   
+Remove some Java 1.5 dependencies from the new metrics code.   
+Fix HADOOP-160.  Remove some uneeded synchronization around time-consuming operations in the TaskTracker.   
+Add attribution.    
+Fix HADOOP-132.  Add an API for reporting metrics (as yet unused).  Contributed by David Bowen.   
+Fix HADOOP-162.  Stop generating ConcurrentModificationExceptions when releasing file locks.  Contributed by Owen O'Malley.   
+Fix for HADOOP-154 (fixed in other relevant places, too).    
+Fix HADOOP-150.  Improved task names that include job name.   
+Fix HADOOP-157.  Make dfs client wait long enough for locks on abandoned files to expire when creating files, so that when a task that writes to dfs fails, its replacements do not also immediately fail when they try to open the same files.  Contributed by Owen O'Malley.   
+Fix HADOOP-69.  NPE when getting hints for a non-existant file chunk.  Contributed by Bryan Pendelton.   
+Fix HADOOP-151.  Close a potential socket leak.   
+Fix HADOOP-148.  Maintain a task failure count per tasktracker and display it in the web ui.  Contributed by Owen.   
+Fix for HADOOP-142.  Avoid re-running a task on a node where it has previously failed.  Contributed by Owen.   
+Fix for HADOOP-133.  Retry pings from child to parent, in case of (local) communcation problems.  Also log exit status, so that one can distinguish patricide from other deaths.  Contributed by Owen.   
+Log the last two commits.    
+Fix for HADOOP-134.  Don't hang jobs when the tasktracker is misconfigured to use an un-writable local directory.  Contributed by Owen.   
+Fix HADOOP-114.  Error message named wrong config property.  Contributed by Michael Stack.   
+Fix for HADOOP-139.  Fix a potential deadlock in LocalFileSystem.lock().  Contributed by Igor Bolotin.   
+Fix HADOOP-138.  Stop multiple tasks per heartbeat.  Contributed by Stefan.   
+Fix HADOOP-118.  Improved cleanup of abandoned file creations in DFS.  Contributed by Owen.   
+Fix HADOOP-143.  Stop line-wrapping when displaying stack traces.  Contributed by Owen O'Malley.   
+Fix HADOOP-144.  Use mapred task id as dfs client id to faciliate debugging.  Contributed by Owen O'Malley.   
+Fixed HADOOP-129.  Replaced uses of java.io.File in FileSystem API with a new class named Path.  Also dfs.local.dir and mapred.local.dir may no longer be space-separated, but must now be comma-separated lists of directories.   
+Updated change log with recent changes.    
+Fix HADOOP-128.  Improved DFS error handling.  Contributed by Owen O'Malley.   
+Fix for HADOOP-92.  Show information about all attempts to run each task in the web ui.  Contributed by Mahadev konar.   
+Add some logging during shuffle.    
+Add link to store.   
+Stop using ssh options by default that are not yet in widely used versions of ssh.  Folks can still enable their use by uncommenting a line in conf/hadoop-env.sh.   
+Fix HADOOP-131.  Add scripts to start/stop dfs and mapred daemons.  Use these in start/stop-all scripts.  Contributed by Chris Mattmann.   
+Fix script documentation.  Thanks, Stefan!    
+Fix for HADOOP-51.  Support per-file replication counts in DFS.  Contributed by Konstantin Shvachko.   
+Fix for HADOOP-126.  'bin/hadoop dfs -cp' now correctly handles .crc files.  This also consolidates a lot of file copying code.  Contributed by Konstantin Shvachko.   
+Preparing for 0.1.1 release.   
+Fix for HADOOP-125.  Absolute paths are tricky on Windows.  For Hadoop's purposes, consider things that start with a slash to be absolute.  Also, Hadoop should not change the JVM's CWD.  All files are now correctly cleaned up for a Nutch crawl, in either local or psuedo-distributed mode.   
+Remove .crc files too.    
+Fix HADOOP-116.  Clean up job submission files.  On job completion, remove the directory containing the submitted job.xml file, since JobClient always creates a new directory to hold this file.   
+Fix HADOOP-117.  Correctly remove mapred temp files.   
+Update change log.    
+Fix so that close() throws IOException, so that classes which override this method can throw IOException, as specified in the Closeable interface.  Also add the Apache license (which must be in every file) and add a bit more javadoc.    
+Trunk is now 0.2-dev.    
+Updating the copyright year.    
+Starting a Hadoop Change Log.  Developers: please add a note to this file for each significant change.  Contributed patches should ideally include an entry for this file.    
+Update site for 0.1.0 release.   
+More fixes to get working directory to work on Windows.  Long-term we should stop using java.io.File for our abstract file paths.  On Windows, 'new File(/foo/bar).isAbsolute()' returns false, which caused lots of problems.  So I have added a FileSystem.isAbsolute() method that we use internally.  I also added a few more .getAbsoluteFile() calls to convert paths into absolute paths so that LocalFileSystem works correctly.  Finally I took advantage of file status information cached in DFSFile, eliminating some namenode RPCs.   
+Fix wiki url.    
+If close() fails, then abandon the file, so that any leases are cleared and other task may attempt to create it.    
+Fix a bug where writing zero-length files would cause things to hang.    
+DFS re-format should fully delete old namenode data.   
+Fix for HADOOP-102.  Contributed by Konstantin.    
+Fix HADOOP-100.  Be more consistent about synchronization of access to taskTracker collection.  Contributed by Owen O'Malley.   
+Fix for HADOOP-107.  As they were written, dfs blocks were both trickled to a datanode and tee'd to a temp file (in case the connection to the datanode failed).  Now they're only written to the temp file, with no connection to the datanode made until the block is complete.  This reduces the number of long-lived mostly-idle connections to datanodes, which was causing problems.  It also simplifies the DFSClient code significantly.   
+Fix for HADOOP-103, part II: I forgot to add this file the first time!   
+Fix for HADOOP-103.  Add a base class for Mapper and Reducer implementations that implements Closeable and JobConfigurable.  Use it in supplied Mappers & Reducers.  Also some minor improvements to demos.  Contributed by Owen O'Malley.   
+Fix for HADOOP-110.  Reuse keys and values when mapping.  Contributed by Owen O'Malley.    
+Fix for HADOOP-2.  The combiner now clones keys and values, so mappers may now safely reuse emitted keys and values.  Contributed by Owen O'Malley.   
+Fix for HADOOP-112.  All operations on local files are now performed through a LocalFileSystem.  In particular, listing the local directory, which was causing this bug, when CRC files were included in the listing.  Now they are correctly excluded.    
+Fix for HADOOP-84.  Improve error and log messages when block cannot be obtained by including file name and offset.  Also removed a few unused variables.  Contributed by Konstantin Shvachko.   
+Fix HADOOP-33.  Avoid calling df too frequently by caching values internally.  Contributed by Konstantin Shvachko.   
+Fix HADOOP-67.  Add a public API for dfs statistics.  Also switch to use the public API for reporting in DFSShell.   
+Add a tool for checking DFS consistency (HADOOP-101).  Add a shortcut to bin/hadoop. In accordance with long-standing *nix tradition this command is called 'fsck'.  Development of this tool has been supported by Krugle.net. Thank you!    
+Fix for file names with spaces.    
+Always return an absolute pathname for local files.  This fixes problems on Windows, where a path specified with "/foo" in a config file is sometimes treated as a relative path.    
+Fix unit tests on Windows.  Don't assume that, just because a pathname begins with a slash that it also returns true for File.isAbsolute().  Instead use getAbsoluteFile() to force such things to be absolute.   
+Document the new format command.    
+Fix for HADOOP-19.  A namenode must now be formatted before it may be used.  Attempts to start a namenode in an unformatted directory will fail, rather than automatically creating a new, empty filesystem, causing existing datanodes to delete all blocks.  Thus a mis-configured dfs.data.dir should no longer cause data loss.   
+Move checking of output directory existence from JobClient to OutputFormat, so that it can be overridden.  Add a base class for OutputFormat that implements this new method.   
+Fix for HADOOP-46.  Jobs can now be named.  Contributed by Owen O'Malley.   
+Fix for HADOOP-98.  Keep more accurate task counts.  Contributed by Owen O'Malley.   
+Fix for HADOOP-52.  Add username and working-directory to FileSystem and JobConf and use these to resolve relative paths.  Contributed by Owen O'Malley.   
+Fix for HADOOP-83.   
+Much improved hadoop logo.  Contributed by Stefan.  Thanks!   
+Fix for HADOOP-3.  Don't permit jobs to write to a pre-existing output directory.  Contributed by Owen O'Malley.   
+Fix for HADOOP-45.  Fatal task errors are now logged at the JobTracker, facilitating debugging.    
+Fix for HADOOP-44.  The error string for remote exceptions now contains the full remote stack trace.  Remote exceptions are now also re-thrown on the client as RemoteException rather than IOException, so that they can be distinguished from other IOExceptions.   
+Start namenode before datanodes to minimize datanode startup errors.    
+Fix for HADOOP-97.  Improve error handling.  Contributed by Konstantin Shvachko.    
+Fix for HADOOP-87.  Dont' pass large buffers through to deflater as this is inefficient.    
+Fix for HADOOP-93.  Convert min split size from int to long, and permit its specification in the config.   
+Fix for HADOOP-86.  Errors while reading map output now cause map task to fail and be re-executed.   
+Give server implementations access to a server's context.  This consists of two additions.  First is a static method Server.get() which returns the server instance it is called under, if any.  Second is the new public class RPC.Server, that replaces a former anonymous class.  RPC server implementation methods can now subclass RPC.Server to keep server state in the subclass.  Application code can then call Server.get() to access that state.  Note that Server.get() may be called under parameter deserialization and return value serialization methods as well, called before and after actual server method calls, respectively.   
+Fix for HADOOP-82.  Completes count should never be less than zero.  Contributed by Michael Stack.   
+Fix for HADOOP-81.  Job-specific parameters should be read from the job-specific configuration, not the daemon's.  This permits speculative execution, number of map & reduce tasks, etc. to be settable in the job.  Contributed by Owen O'Malley.   
+Fix for HADOOP-66.  Delete dfs temp files on JVM exit.   
+Fix for HADOOP-80.  Make BytesWritable also a WritableComparable.  Also add hashBytes() utility method to WritableComparator and use it to hash both BytesWritable and UTF8.  Contributed by Owen O'Malley.   
+Updated link to jira.   
+Fix for HADOOP-79.  Some namenode optimizations.  Contributed by Konstantin Shvachko.   
+Fix tasktracker to exit when errors are encountered reading map output, in order to force re-execution of map tasks.  It's overkill, since it will re-compute all map output computed by that task tracker, not just that which could not be read, but this should be a rare situation.  If we start seeing it frequently, then we could optimize this by adding a way to tell the jobtracker that a particular previously completed map task now needs to be re-executed.   
+Fix for HADOOP-78.  Stream buffering was mistakenly disabled in writes by the RPC client.  Identified & fixed by Owen O'Malley.    
+Use build/test for unit test data, instead of /tmp as in defaults.    
+Fix for HADOOP-77.  Fixes some NPEs.  Contributed by Stefan.   
+Fix for HADOOP-70.  Unit tests should have their own hadoop-site.xml and mapred-default.xml, so that local modifications to these files in conf/ don't alter unit testing.  Also rename TestDFS so that it is not normally run, and add a new test target which runs tests using the config files in conf/.   
+Reverted changes from 384385, which removed local backup copy of block & removed most timeouts.  That worked well when all hosts are healthy, but when a few are very slow it caused too many tasks to timeout and loads to balloon on slow hosts.  So the local backup is back, but no longer in /tmp, rather in dfs.data.dir, and timeouts are back.  I also added connect timeouts, so that dfs connects also don't get hung up by slow hosts.   
+Fixed wiki URL.   
+Fixed wiki URL.   
+Fix for HADOOP-66.  DFS blocks are no longer written to local temp files.  If a connection to a datanode fails then an exception is now thrown, rather than trying to re-connect to another datanode.  Timeouts were also removed from datanode connections, since these caused a lot of failed connections.   
+Add ability to sleep a bit between each command that's submitted to a slave, to meter slave commands a bit.   
+Fix for HADOOP-57.  Permit listing of "/" in dfs.  With help from Mahadev konar.    
+Apply local Configuration to parameters received via RPC if they implement Configurable. Fix by Marko Bauhardt.  Note: in the future there may be protocols that assume different local and remote Configuration. However, with the current RPC implementation we don't support it anyway, and for now it seems better that parameters implementing Configurable should be provided with non-null Configuration.    
+Increase deflater & inflater buffer size, for better performance.    
+Reduce iteration through all map & reduce tasks to improve jobtracker performance.    
+Replace an NPE with an informative warning.    
+Increase some intervals to further reduce stress on the jobtracker.    
+Don't always query jobtracker for all needed map outputs, instead just for a random sample.  When the total number of splits was large, the jobtracker was spending most of its time servicing these requests. Also reduce the frequency of these requests.  Long-term we may need a different algorithm here to ensure that reduces are more promptly and efficiently notified of map completions.    
+  The MapredLoadTest now has an extra step, to exercise the case where we have multiple reduce tasks.    It used to have two stages: one job that created a huge file of numbers in random order, followed by a job that would read that file and count the numbers.  If the final count was correct, the test passed.    Unfortunately, neither of these jobs had a reduce task that was greater than 1.    So now we've got three stages.  The first stage is unchanged.  The second stage reads the big file, then emits the answer key split into 10 parts, one for each reduce task.  then a third stage merges those parts into a final number count.  As before, if that final count is correct, all is well.     
+  Fix bug HADOOP-26.  Available space is now considered correctly during DFS block-allocation.      
+  This code makes sure we read from a local block, if available.  I thought this code had already been committed some time ago, but the workspace doesn't have it.     
+Fix a couple of tasktracker bugs.   
+  A bug in the TaskTracker was governing task-allocation by counting the total number of tasks.  The right thing to do is keep a total for map tasks, and a separate total for reduces.    This is now fixed.     
+Check taskid's more carefully.  Suggested by Michael Stack.    
+Fix for HADOOP-16.  Splitting and other job planning is now performed in a separate thread.   
+Upgrade to Lucene 1.9.1.   
+Fix for HADOOP-60, with help from Owen & Michael.   
+Permit folks to modify options passed to ssh.  For example, older versions of ssh do not support the ConnectTimeout option.   
+Add webapps to classpath so they're found.    
+Fix rsync command to (a) use ssh as transport, and (b) to correctly quote the path.    
+Fix to make independent of "unzip", using java's built in unzip code instead.    
+Fix command line (again!).    
+Update example command line.    
+Un-escape containing jar's path, which is URL-encoded.  This fixes things primarily on Windows, where paths are likely to contain spaces.    
+Escape paths so that spaces are permitted (as is common on Windows.)   
+Upgrade lucene version to final release.   
+Minor improvements to DOAP file.    
+Add a DOAP description for hadoop.   
+Print stack trace when child fails to contact parent.    
+Fix for HADOOP-40.  Buffer size was ignored.   
+Fix for HADOOP-41.  Support passing more options to child JVM.  Contributed by Michael Stack.   
+Fix for HADOOP-40.  Buffer position was not maintained correctly.  Contributed by Konstantin Shvachko.   
+Fix for HADOOP-49: Permit specification of jobtracker when submitting jobs.   
+Fix so that task state is displayed even when there are no errors.  Also changed report to be a datastructure rather than a vector of strings.   
+Updated javadoc for recent config changes.   
+Add missing synchronization.   
+Make speculative execution optional, since it can break map tasks that have side effects.  Also fix TestFileSystem to be safe to use with speculative execution.   
+Fix HADOOP-36.  Scripts now source conf/hadoop-env.sh, to faciliate setting of environment variables, even on remote hosts.  The default slaves file has move from ~/.slaves to conf/slaves.   
+Fix HADOOP-38: Add FileSystem.getBlockSize() method and use it as the maximum split size.  Also change FileSystem to implement Configurable, and improve some javadoc, using inherited comments where possible and removing implementation details from public javadoc.   
+Move Closeable interface to io package, since it is of general utility, and to prepare for JDK 1.5.   
+  Fix bug HADOOP-16.    Don't invoke TaskInProgress.hasTaskWithCacheHit() unnecessarily from within JobInProgress.    Also, cache filesystem hints inside JobInProgress.     
+HADOOP-37: Add ClusterStatus.  Contributed by Owen O'Malley.   
+Fix for HADOOP-34: make build paths relative to location of build.xml, not PWD.  Contributed by Jeremy Bensley.   
+  Add a bunch of updated comments and JavaDocs to the Distributed File System package.     
+Bundle webapps into jar.   
+Fix HADOOP-30: add -lsr and -cat commands to DFSShell.  Contributed by Michel Tourn.   
+Further improvements from Bryan A. Pendleton.    
+Make compatible with JDK 1.4.    
+Fix for HADOOP-12.  The JobTracker now loads the InputFormat from the job's jar file.   
+Keep 'unzip' from prompting when overwriting (e.g., when archive contains same file twice).  Also make it less verbose.    
+Add an easy way to specify a job's jar, by naming a class in the jar.   
+Stop using deprecated 'jspc' ant task and instead call jasper directly.  Also rename webapp files to align with package name.   
+Fixed HADOOP-20: permit mappers and reducers to cleanup.  Add a close() method to the Mapper and Reducer interfaces by having them extend a Closeable interface.  Update all implementations to define close().  Patch by Michel Tourn.   
+Removed properties mistakenly copied from Nutch.    
+Create html documentation for configuration defaults and link to these from javadoc.   
+Fix for split from nutch.    
+Fixed so that examples jar is packaged correctly.    
+Fix HADOOP-28.  Jsp pages are now pre-compiled to servlets that can access package-private classes.   
+Fix HADOOP-25: improve example code & package separately.  Contributed by Owen O'Malley.   
+Updated javadoc.    
+Initial version of a Hadoop tutorial.    
+Clean up javadoc, reduce number of public classes.   
+Log to logs directory by default.    
+Remove a spurious space.    
+Add WritableFactory mechanism, to permit one to use ObjectWritable with non-public classes.  Register factories for DFS implementation classes and make them non-public.  This greatly simplifies the javadoc.   
+Improved javadoc, starting overview and package documentation.  Also moved DF from dfs to fs package.   
+Add scripts into jar file so they're bundled with code.   
+Fixed javadoc link and added more news.   
+Fix for HADOOP-22: remove unused imports.  By Sami Siren.   
+Fix HADOOP-21: fix mapred webapp jsp for split from Nutch.  Contributed by Owen O'Malley.   
+Remove vestige of Nutch's build.xml so that nightly target will run.    
+Fix HADOOP-5: add commons logging jar to lib.   
+Remove a few vestiges of Nutch's plugin mechanism, fixing bug HADOOP-6 (Thanks, Owen!).  Also fix a few typos.    
+Fix some config problems, remove notion of app resources: it's overkill.   
+Don't require final resoureces.   
+Permit multiple default and final Configuration resources.   
+First version that passes unit tests.   
+First version that compiles.   
+Initial commit of code copied from Nutch.   
+Initial commit of code copied from Nutch.   
+Slightly improved logo.   
+First version of website.   
+Create hadoop sub-project.   

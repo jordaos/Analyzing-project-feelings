@@ -1,0 +1,3 @@
+Reverted changes from 384385, which removed local backup copy of block & removed most timeouts.  That worked well when all hosts are healthy, but when a few are very slow it caused too many tasks to timeout and loads to balloon on slow hosts.  So the local backup is back, but no longer in /tmp, rather in dfs.data.dir, and timeouts are back.  I also added connect timeouts, so that dfs connects also don't get hung up by slow hosts.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@384665 13f79535-47bb-0310-9956-ffa450edef68

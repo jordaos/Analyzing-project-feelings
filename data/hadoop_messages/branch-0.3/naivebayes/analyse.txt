@@ -1,0 +1,15 @@
+Usando Naive Bayes com NLTK, a precisão é de 78%
+/home/jordao/.local/lib/python2.7/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+        neg       0.00      0.00      0.00         6
+        neu       1.00      0.55      0.71        53
+        pos       0.73      1.00      0.84        81
+
+avg / total       0.80      0.79      0.76       140
+
+[[ 0  0  6]
+ [ 0 29 24]
+ [ 0  0 81]]
+

@@ -1,0 +1,3 @@
+Fix HADOOP-144.  Use mapred task id as dfs client id to faciliate debugging.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@394987 13f79535-47bb-0310-9956-ffa450edef68

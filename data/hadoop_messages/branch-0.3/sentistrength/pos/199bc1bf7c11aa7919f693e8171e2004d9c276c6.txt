@@ -1,0 +1,4 @@
+Fix for paths that might contain spaces (e.g. on windows).
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@410659 13f79535-47bb-0310-9956-ffa450edef68

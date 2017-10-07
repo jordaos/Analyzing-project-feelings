@@ -1,0 +1,3 @@
+Fix for HADOOP-103.  Add a base class for Mapper and Reducer implementations that implements Closeable and JobConfigurable.  Use it in supplied Mappers & Reducers.  Also some minor improvements to demos.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390258 13f79535-47bb-0310-9956-ffa450edef68

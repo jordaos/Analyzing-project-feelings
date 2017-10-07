@@ -1,0 +1,3 @@
+Fix HADOOP-33.  Avoid calling df too frequently by caching values internally.  Contributed by Konstantin Shvachko.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@389916 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+Fix for HADOOP-49: Permit specification of jobtracker when submitting jobs.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@379955 13f79535-47bb-0310-9956-ffa450edef68

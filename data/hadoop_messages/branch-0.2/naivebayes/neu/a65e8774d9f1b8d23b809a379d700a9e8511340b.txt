@@ -1,0 +1,4 @@
+Use build/test for unit test data, instead of /tmp as in defaults.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@385668 13f79535-47bb-0310-9956-ffa450edef68

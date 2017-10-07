@@ -1,0 +1,5 @@
+HADOOP-217.  Fix another illegal access problem when static
+initializers are not run.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@411282 13f79535-47bb-0310-9956-ffa450edef68

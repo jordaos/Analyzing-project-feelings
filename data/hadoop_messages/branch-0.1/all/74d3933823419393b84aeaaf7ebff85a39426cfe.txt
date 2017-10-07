@@ -1,0 +1,3 @@
+Fix for HADOOP-86.  Errors while reading map output now cause map task to fail and be re-executed.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@387279 13f79535-47bb-0310-9956-ffa450edef68
