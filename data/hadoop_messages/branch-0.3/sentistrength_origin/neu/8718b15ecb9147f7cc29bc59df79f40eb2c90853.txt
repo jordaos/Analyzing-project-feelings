@@ -1,0 +1,4 @@
+Fix to work in Java 1.4.  This was breaking the nightly build.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@411225 13f79535-47bb-0310-9956-ffa450edef68

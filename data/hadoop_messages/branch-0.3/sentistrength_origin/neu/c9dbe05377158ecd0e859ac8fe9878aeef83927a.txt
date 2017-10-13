@@ -1,0 +1,3 @@
+HADOOP-185.  Fix so that, if a task tracker times out making the RPC asking for a new task to run, the job tracker does not think that it is actually running the task returned (but never received).  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399065 13f79535-47bb-0310-9956-ffa450edef68

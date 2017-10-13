@@ -1,0 +1,3 @@
+HADOOP-180.  Quee task cleanups so that TaskTracker remains responsive.  Contributed by Owen.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@406706 13f79535-47bb-0310-9956-ffa450edef68

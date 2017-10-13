@@ -1,0 +1,3 @@
+Fix HADOOP-100.  Be more consistent about synchronization of access to taskTracker collection.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@390287 13f79535-47bb-0310-9956-ffa450edef68

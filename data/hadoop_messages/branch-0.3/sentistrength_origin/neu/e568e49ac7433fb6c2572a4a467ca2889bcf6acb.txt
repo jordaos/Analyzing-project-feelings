@@ -1,0 +1,3 @@
+Better fix for HADOOP-189.  Tested in both distributed and standalone mode.  Note that WritableFactories is not quite functioning correctly and there are a few hacks around this that should be removed when that's better understood.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399500 13f79535-47bb-0310-9956-ffa450edef68

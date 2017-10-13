@@ -1,0 +1,3 @@
+HADOOP-163.  Cause datanodes that are unable to either read or write data to exit.  Contributed by Hairong.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@409773 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+Stop using ssh options by default that are not yet in widely used versions of ssh.  Folks can still enable their use by uncommenting a line in conf/hadoop-env.sh.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@393261 13f79535-47bb-0310-9956-ffa450edef68

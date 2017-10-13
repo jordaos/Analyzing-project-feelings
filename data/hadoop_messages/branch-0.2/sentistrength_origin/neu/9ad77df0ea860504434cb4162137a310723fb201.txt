@@ -1,0 +1,3 @@
+HADOOP-189.  Fix MapReduce in standalone configuration to correctly handle job jar files that contain a lib directory with nested jar files.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@399426 13f79535-47bb-0310-9956-ffa450edef68

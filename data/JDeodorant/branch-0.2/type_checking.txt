@@ -1,0 +1,12 @@
+org.apache.hadoop.mapred.MapOutputFile::public void setConf(org.apache.hadoop.conf.Configuration) 
+org.apache.hadoop.mapred.MapTask::public void setConf(org.apache.hadoop.conf.Configuration) 
+org.apache.hadoop.mapred.ReduceTask::public void setConf(org.apache.hadoop.conf.Configuration) 
+org.apache.hadoop.dfs.NameNode::public boolean complete(java.lang.String, java.lang.String) throws java.io.IOException
+org.apache.hadoop.dfs.NameNode::public boolean obtainLock(java.lang.String, java.lang.String, boolean) throws java.io.IOException
+org.apache.hadoop.dfs.NameNode::public boolean releaseLock(java.lang.String, java.lang.String) throws java.io.IOException
+org.apache.hadoop.mapred.TaskTracker.TaskInProgress::public synchronized void mapOutputLost() throws java.io.IOException
+org.apache.hadoop.mapred.JobTracker::void updateTaskStatuses(org.apache.hadoop.mapred.TaskTrackerStatus) 
+org.apache.hadoop.record.compiler.JRecord::public void genCppCode(java.io.FileWriter, java.io.FileWriter) throws java.io.IOException
+org.apache.hadoop.record.compiler.JRecord::public void genCppCode(java.io.FileWriter, java.io.FileWriter) throws java.io.IOException
+org.apache.hadoop.dfs.DFSck::private void check(org.apache.hadoop.dfs.DFSFileInfo, org.apache.hadoop.dfs.DFSck.Result) throws java.lang.Exception
+org.apache.hadoop.mapred.TaskTracker.TaskInProgress::public synchronized void jobHasFinished() throws java.io.IOException

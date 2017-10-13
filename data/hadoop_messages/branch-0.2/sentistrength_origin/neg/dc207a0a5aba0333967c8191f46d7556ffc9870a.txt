@@ -1,0 +1,3 @@
+Fix for HADOOP-70.  Unit tests should have their own hadoop-site.xml and mapred-default.xml, so that local modifications to these files in conf/ don't alter unit testing.  Also rename TestDFS so that it is not normally run, and add a new test target which runs tests using the config files in conf/.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@385652 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,3 @@
+HADOOP-198.  Add more example programs to example driver.  Also fix another WritableFactories-related error.  Contributed by Mahadev.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@400104 13f79535-47bb-0310-9956-ffa450edef68

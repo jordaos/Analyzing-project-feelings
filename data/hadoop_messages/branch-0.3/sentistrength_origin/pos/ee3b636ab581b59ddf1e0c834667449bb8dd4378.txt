@@ -1,0 +1,3 @@
+Permit configuration to specify higher replication for job submission files.  Also reduce complaints when a file's replication is greater than the size of the cluster.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@397601 13f79535-47bb-0310-9956-ffa450edef68

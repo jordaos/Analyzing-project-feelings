@@ -1,0 +1,3 @@
+Stop using deprecated 'jspc' ant task and instead call jasper directly.  Also rename webapp files to align with package name.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@376366 13f79535-47bb-0310-9956-ffa450edef68

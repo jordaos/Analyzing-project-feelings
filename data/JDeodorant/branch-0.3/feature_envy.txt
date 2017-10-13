@@ -1,0 +1,7 @@
+Refactoring Type	Source Entity	Target Class	Source/Target accessed members	Rate it!
+Move Method	org.apache.hadoop.mapred.InputFormatBase::listPaths(org.apache.hadoop.fs.FileSystem, org.apache.hadoop.mapred.JobConf):org.apache.hadoop.fs.Path[]	org.apache.hadoop.mapred.JobConf	0/2	
+Move Method	org.apache.hadoop.dfs.FSDirectory::normalizePath(org.apache.hadoop.io.UTF8):java.lang.String	org.apache.hadoop.io.UTF8	0/1	
+Move Method	org.apache.hadoop.dfs.FSNamesystem::exists(org.apache.hadoop.io.UTF8):boolean	org.apache.hadoop.dfs.FSDirectory	1/2	
+Move Method	org.apache.hadoop.dfs.FSNamesystem::getDatanode(org.apache.hadoop.dfs.DatanodeID):org.apache.hadoop.dfs.DatanodeInfo	org.apache.hadoop.dfs.DatanodeID	1/2	
+Move Method	org.apache.hadoop.dfs.MiniDFSCluster.NameNodeRunner::shutdown():void	org.apache.hadoop.dfs.NameNode	1/2	
+Move Method	org.apache.hadoop.dfs.DFSShell::ls(java.lang.String, boolean):void	org.apache.hadoop.fs.FileSystem	2/4	

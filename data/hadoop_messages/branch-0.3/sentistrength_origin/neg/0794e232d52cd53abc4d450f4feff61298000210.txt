@@ -1,0 +1,3 @@
+Fix HADOOP-151.  Close a potential socket leak.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@395444 13f79535-47bb-0310-9956-ffa450edef68

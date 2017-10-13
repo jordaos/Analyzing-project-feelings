@@ -1,0 +1,3 @@
+HADOOP-186.  Better error handling in TaskTracker's top-level loop.  Also improve calculation of time to send next heartbeat.  Contributed by Owen O'Malley.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@398994 13f79535-47bb-0310-9956-ffa450edef68

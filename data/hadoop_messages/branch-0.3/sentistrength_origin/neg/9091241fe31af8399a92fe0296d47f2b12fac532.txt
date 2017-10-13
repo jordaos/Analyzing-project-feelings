@@ -1,0 +1,3 @@
+HADOOP-75.  In DFS, only check for a complete file when the file is closed, rather than as each block is written.  Contributed by Milind.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@410402 13f79535-47bb-0310-9956-ffa450edef68

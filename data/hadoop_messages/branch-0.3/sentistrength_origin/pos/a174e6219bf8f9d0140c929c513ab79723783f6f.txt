@@ -1,0 +1,3 @@
+Give server implementations access to a server's context.  This consists of two additions.  First is a static method Server.get() which returns the server instance it is called under, if any.  Second is the new public class RPC.Server, that replaces a former anonymous class.  RPC server implementation methods can now subclass RPC.Server to keep server state in the subclass.  Application code can then call Server.get() to access that state.  Note that Server.get() may be called under parameter deserialization and return value serialization methods as well, called before and after actual server method calls, respectively.
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@386459 13f79535-47bb-0310-9956-ffa450edef68

@@ -1,0 +1,4 @@
+Increase deflater & inflater buffer size, for better performance.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/lucene/hadoop/trunk@383691 13f79535-47bb-0310-9956-ffa450edef68
